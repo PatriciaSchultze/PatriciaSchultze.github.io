@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pension Schultze - Berlin</title>
+        <link rel="stylesheet" type="text/css" href="PensionSchultze.css">
+ 
+        <!-- font embedding -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <!-- head /--> 
+        <header id="header">
+            <div id="logo">
+                <a href="PensionSchultze.html">
+                    <img src="images/teddy(1-gold).png" alt="Logo - Pension Schultze">
+                </a>
+            </div>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a class="headerLinks" href="PensionSchultze.html">START</a></li>
+                    <li><a class="headerLinks" href="PensionSchultze_Zimmer.html">ZIMMER</a></li>
+                    <li><a class="headerLinks" href="PensionSchultze_Apartments.html">APARTMENTS</a></li>
+                    <li><a class="headerLinks" href="PensionSchultze_HausInfo.html">HAUS-INFO</a></li>
+                    <li><a class="headerLinks" href="PensionSchultze_Preise.html">PREISE</a></li>
+                    <li><a class="headerLinks" href="PensionSchultze_AnfrageUndKontakt.html">ANFRAGE &amp; KONTAKT</a></li>
+                    <li>
+                        <img class="menu" src="images/menu Kopie.png" alt="Menu" onclick="openMenu"">
+                    </li>
+                    <li>
+                        <img class="menu" src="images/menu Kopie.png" alt="Menu"">
+                    </li>
+                </ul>
+            </nav>
+
+
+            
+        </header>
+
+
+        <!-- middle section /--> 
+            <div id="headerSpace">
+            </div>
+            <hr class="longRed">
+
+            <div class="slideshow">
+                    <!-- slides -->
+                    <div class="slide">
+                        <img src="images/Friero13006.JPG" alt="Pension Schultze Friedrichrodaerstr.13" class="slide-bild" style="object-position: 50% 60%;"">
+                    </div>   
+                    <div class="slide">
+                        <img src="images/Fruehst-1.jpg" alt="Pension Schultze Frühstücksraum" class="slide-bild" style="object-position: 50% 55%;">
+                    </div>   
+                    <div class="slide">
+                        <img src="images/Garten_grade.jpg" alt="Pension Schultze Garten" class="slide-bild" style="object-position: 50% 31%;">
+                    </div>   
+                    <div class="slide">
+                        <img src="images/gemeinschaftsraum.jpg" alt="Pension Schultze Gemeinschaftraum" class="slide-bild" style="object-position: 50% 70%;">
+                    </div>        
+                    <div class="slide">
+                        <img src="images/Rezeption.jpg" alt="Pension Schultze Rezeption" class="slide-bild">
+                    </div> 
+
+                    <!-- text -->
+                    <div class="slide-textbereich">
+                        <h1 class="slide-text">Pension Schultze</h1>
+                        <hr class="thinRed">
+                        <h2 class="slide-subtext slide-text">Berlin</h2>
+                    </div>
+
+                    <!-- arrows -->
+                    <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a>
+                    <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+
+                    <!-- bullets -->
+                    <ol class="indikatorenliste">
+                        <li class="indikator" onclick="springeZuEintrag(0)">&#8226;</li>
+                        <li class="indikator" onclick="springeZuEintrag(1)">&#8226;</li>
+                        <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
+                        <li class="indikator" onclick="springeZuEintrag(3)">&#8226;</li>
+                        <li class="indikator" onclick="springeZuEintrag(4)">&#8226;</li>
+                    </ol>
+            </div>
+
+            <!-- Welcome -->
+            <section id="welcome">
+                <hr class="divisions">
+                <h3 class="headings">Herzlich Wilkommen!</h3>
+                <hr class="divisions">
+                <div>
+                    <p>Schön, dass Sie unsere Seite gefunden haben! Seit 40 Jahren bieten wir, Familie Schultze, gemütliche Zimer und Apartments in Berlin/Steglitz in verschiedenen Größen und Preiskategorien.</p>
+                    <p>Trotz guter Vekehrsanbindung ist unser Haus in einer sehr ruhigen Lage. </p>
+                </div>
+            
+                <div id="Around">
+                <div id="otherPages">
+                    <ul>
+                        <li>
+                            <a href="PensionSchultze_Zimmer.html">
+                                <img src="images/Z-12-1.jpg" alt="Zimmer">
+                                <h5 id="subtextPics">Zimmer</h5>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="PensionSchultze_Apartments.html">
+                                <img src="images/A-18-1.jpg" alt="Apartments">
+                                <h5 id="subtextPics">Apartments</h1>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="PensionSchultze_AnfrageUndKontakt.html">
+                                <img src="images/Rezeption.jpg" alt="Kontakt">
+                                <h5 id="subtextPics">Kontakt</h5>
+                        </a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            </section>
+
+
+
+
+        <!-- foot /--> 
+        <footer>
+            <div id="impressum">
+                
+                <div class="info">
+                    <p class="infoTitle">    &#128383;  Telefon</p>
+                    <p class="infoText">Tel.: 030 7799070</p>
+                    <p class="infoText"></p>
+                </div>
+                <div class="info">
+                    <p class="infoTitle">    &#8962;  Adresse</p>
+                    <p class="infoText">Friedrichrodaerstr.13</p>
+                    <p class="infoText" style="margin-top: 0; margin-bottom: 10px;">12249 Berlin</p>
+                </div>
+                <div class="info">
+                    <p class="infoTitle">    &#128386;  Kontakt</p>
+                    <a class="infoText" id="mail" href="mailto:patricia.schultze@gmx,de" style="color: white; ">mail@pension-schultze.de</a>
+                    <p class="infoText"></p>
+                </div>
+
+            </div>
+            <!-- google maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.782926865868!2d13.36405519111583!3d52.42873079993801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a845321dc5f9e3%3A0x40114459633d7c0c!2sFriedrichrodaer%20Str.%2013%2C%2012249%20Berlin!5e0!3m2!1sde!2sde!4v1702513241428!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </footer>
+
+        <script src="PensionSchultze.js"></script>
+    </body>
+</html>

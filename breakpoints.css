@@ -1,0 +1,238 @@
+@media only screen and (max-width: 924px) {
+    .olBullets{
+       gap: 5px;
+    }
+    #aProjectTitle{
+        font-size: 20px;
+    }
+    #aProjectTitle:hover{
+       
+        font-size: 22px;
+      }
+
+    #divArrows{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    #pProjectsSubText{
+        width: 100%;
+    }
+
+
+        
+}
+
+
+@media only screen and (max-width: 810px) {
+      
+
+
+    .divWelcome{
+        padding: 25px;
+    }
+
+    #divWelcomeText > h1{
+        font-size: 60px;
+    }
+    
+    divAboutMeText{
+        width: 47vw;
+    }
+
+    #secAboutMe{
+        height: 80vh;
+    }
+    
+}
+
+@media (max-width: 800px) {
+      
+    
+    #secLookAndOffer{
+            height: 200vh;
+            background-color: black;
+    }
+
+    .divWelcome{
+        padding: 27px;
+    }
+
+    #divWelcomeText > h1{
+        font-size: 50px;
+    }
+    
+    .divContact{
+        width: 30%;
+    }
+        
+}
+
+
+@media only screen and (max-width: 750px) {
+    .olBullets{
+        display: none;
+    }
+
+        
+}
+
+@media only screen and (max-width: 600px) {
+    .column_layout{
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        }
+
+        #divWelcomeText > h1{
+            font-size: 40px;
+        }
+        
+        #divWelcomeText > h2{
+            font-size: 23px;
+            align-self: flex-end;
+        }
+        
+        #divWelcomeText > p{
+            font-size: 8px;
+        } 
+
+        
+}
+
+@media (orientation: portrait) {
+    #LandscapeWarning {
+      display: flex;
+      position: fixed;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.858);
+      color: rgb(224, 251, 255);
+      font-size: 200%;
+      z-index: 15;
+      padding: 3%;
+      box-sizing: border-box;
+      text-shadow: 1px 1px 5px rgb(255, 255, 255);
+      gap: 5%;
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    
+/* General ******************************************************/
+
+    section{
+        height: 110vh;
+    }
+
+    .headings{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .columnLayoutLandscape{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        
+    }
+
+/* Header ******************************************************/
+
+/* Welcome ******************************************************/
+
+    #secWelcome{
+        height: 90vh;
+    }
+
+/* Projects******************************************************/
+
+    #secProjects{
+        height: 150vh;
+    }
+    .shortLine{
+        margin: 10px;
+    }
+
+    #pProjectsSubText{
+        font-size: 15px;
+    }
+
+    #aProjectTitle{
+        font-size: 20px;
+    }
+    #aProjectTitle:hover{
+       
+        font-size: 22px;
+      }
+
+    #divArrows{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    #pProjectsSubText{
+        width: 100%;
+    }
+
+
+/* Look and Offers ******************************************************/
+
+    #secLookAndOffer{
+        gap: 1%;
+        padding-right: 10px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        gap: 5%;
+    }
+
+    #divQuarterLowerMain{
+        position: relative;
+       
+     }
+
+/* About ******************************************************/
+
+    #secAboutMe{
+        height: 132vh;
+        padding-bottom: 0;
+    }
+
+    #hrAboutHead:hover{
+       
+        font-size: 26px;
+    }
+
+    #divAboutMeText{
+        width: 80%;
+        font-size: 14px;
+    }
+
+    #hrAboutHead{
+        margin: 0px;
+    }
+
+    #hrAboutMe{
+        margin-bottom: 50px;
+    }
+
+
+
+
+/* Footer ******************************************************/
+ 
+    footer{
+        height: 45vh;
+    }
+}

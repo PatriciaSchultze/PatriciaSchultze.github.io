@@ -1,0 +1,224 @@
+<!-- responsive design, media query, flex direction -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patricia Schultze - Game Programmer</title>
+        <link rel="stylesheet" type="text/css" href="patriciaSchultze.css">
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <link rel="stylesheet" type="text/css" href="breakpoints.css">
+        <link rel="icon" type="image/x-icon" href="/images/LogoPS.jpg">
+        <!-- font embedding -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200&display=swap" rel="stylesheet"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+        <!-- head /--> 
+        <header id="header">
+            <ul id="ulHeader">
+                <li><a class="headerLinks activeHeaderLink" href="index.html">HOME</a></li>
+                <li><a class="headerLinks" href="projects.html">PROJECTS</a></li>
+                <li><a class="headerLinks" href="index.html"> <img id="logo" src="images/LogoPS.jpg" alt="Logo - Patricia Schultze"> </a> </li>
+                <li><a class="headerLinks" href="contact.html">CONTACT</a></li>
+                <li><a class="headerLinks" href="about.html">ABOUT</a></li>
+            </ul>
+        </header>
+
+
+
+        <!-- middle section /--> 
+            <div id="headerSpace"></div>
+
+            <div id="LandscapeWarning">
+                <p>Please turn your phone into landscape mode </p>
+                <p style="text-shadow: 0px 0px 10px rgb(0, 0, 0);">(portait mode will be available at sometime <font size = "-1">(-> this will happen very far in the future))</p>
+            </div>
+                
+
+            <!-- Welcome -->
+            <section id="secWelcome" class="section1 column_layout">
+                <div id="divWelcomeTextCenter" class="divWelcome column_layout">
+                    <div id="divWelcomeText">                        
+                        <h1>Welcome</h1>
+                        <h3>to my</h3>
+                        <h2>portfolio website!</h2>
+                    </div>
+                </div>
+                <div id="divHelloTextCenter" class="divWelcome column_layout">
+                    <div id="divHelloText">
+                        <h4>Patricia Schultze</h4>
+                        <h5>Game Programer</h5>
+                        <h5>Game Design Student in Berlin at MD.H</h5>
+                        <h5>Expected graduation: Spring 2026</h5>
+                    </div>
+                </div>
+                <div id="divJumpButton">
+                    <a href="#secProjects" id="aJumpButton">&#11163;</a>
+                </div>
+            </section>
+
+
+            <!-- Projects -->
+            <section id="secProjects" class="section2">
+                <div id="projectsHead">
+                    <h3 class="headings">Projects</h3>
+                    <hr class="shortLine">
+                </div>
+                <!-- bullets -->
+                <ol class="olBullets">
+                        <li class="liBullet" onclick="springeZuEintrag(0)">&#8226;</li>
+                        <li class="liBullet" onclick="springeZuEintrag(1)">&#8226;</li>
+                        <li class="liBullet" onclick="springeZuEintrag(2)">&#8226;</li>
+                        <li class="liBullet" onclick="springeZuEintrag(3)">&#8226;</li>
+                        <li class="liBullet" onclick="springeZuEintrag(4)">&#8226;</li>
+                        <li class="liBullet" onclick="springeZuEintrag(5)">&#8226;</li>
+                        <li class="liBullet" onclick="springeZuEintrag(6)">&#8226;</li>
+                        <li class="liBullet" onclick="springeZuEintrag(7)">&#8226;</li>
+                        <li class="liBullet" onclick="springeZuEintrag(8)">&#8226;</li>
+                        <!-- <li class="liBullet" onclick="springeZuEintrag(9)">&#8226;</li> -->
+                </ol>
+                <div id="slideshow">
+                    <!-- slides -->
+                        
+                        <img data-url="projects.html#secMansion" class="imgSlide" src="images/MansionOfTimepic.png" alt="project: Mansion of Time - group">
+                        <img data-url="projects.html#secHopsie" class="imgSlide" src="images/HopsyFlopsie.png" alt="project: Hopsie Flopsie - group">
+                        <img data-url="projects.html#secDuoDash" class="imgSlide" src="images/duoDash.png" alt="project: Duo Dash - group"> 
+                        <img data-url="projects.html#secPension" class="imgSlide" src="images/PensionSchultzeStart.png" alt="project: Pension Schultze - solo">
+                        <img data-url="projects.html#secPortfolio" class="imgSlide" src="images/PortfolioStart.png" alt="project: My Portfolio - solo">
+                        <img data-url="projects.html#secCutter" class="imgSlide" src="images/CarrotCutterBanana.png" alt="project: Carrot Cutter - group">
+                        <img data-url="projects.html#secTunnels" class="imgSlide" src="images/Tunnels.png" alt="project: TheTunnels - solo">
+                        <!-- <img data-url="projects.html#secStories" class="imgSlide" src="images/.png" alt="project: Short Stories - solo"> -->
+                        <img data-url="projects.html#secFireWater" class="imgSlide" src="images/fireWater.png" alt="project: Fireboy Watergirl - solo"> 
+                        <img data-url="projects.html#secFirstUnreal" class="imgSlide"src="images/coins5WithChar.png" alt="project: First Game - solo">
+                       
+                        <!-- arrows -->
+                        <div id="divArrows">
+                            <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a>
+                            <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+                        </div>
+                    </div>   
+
+
+                </div>
+                <div id="projectsSub">
+                        <hr class="shortLine" id="hrBeneathProject">
+                        <a id="aProjectTitle" href="">HopsieFlopsie</a>
+                        <div id="divProjectsSubText">
+                            <p id="pProjectsSubText">This was my first game in a big group project. It is a mobile game, where you are a fish, wanting to reach the ocean, having to cross an entire city. One reference game was 'Crossy Roads'.</p>
+                        </div>
+                </div>
+            </section>
+
+            <!-- LookAndOffer -->
+            
+            <!-- Look -->
+           <section id="secLookAndOffer" class="section1">
+            <div class="divQuarterMain" id="divQuarterLowerMain">
+                <h3 class="hLookingMain" class="headings">Currently looking for...</h3>
+                <p id="pInternshipMain">an Internship <font size = "-1">(during uni time)</font></p>
+                <ul id="ulLooking">
+                    <li class="liLookingMain">starting in October 2024 <br>(September or November is also possible)</li>
+                    <li class="liLookingMain">as a programer or also game/level Designer</li>
+                    <li class="liLookingMain">fulltime</li>
+                    <li class="liLookingMain">presence or hybrid</li>
+                    <li class="liLookingMain">in Berlin or Brandenburg</li>
+                </ul>
+            </div>
+            <!-- Offer -->
+            <div class="divQuarterMain" id="divQuarterMainLooking">
+                <p id="pInternshipMain">What I can offer </p>
+                <div id="divLookingMain">
+                    <div class="divLookingHalf">
+                        <div class="divOffers" id="divProgram">
+                            <h5>Languages</h5>
+                            <li class="liLookingMain">English (fluent)</li>
+                            <li class="liLookingMain">German (native)</li>
+                            <li class="liLookingMain">Spanish (basics)</li>
+                            <li class="liLookingMain">Latin (Latinum)</li>
+                            <li class="liLookingMain">Ancient Greek (Graecum)</li>
+                        </div>
+                        <div class="divOffers" id="divProgram">
+                            <h5>Programming Languages</h5>
+                            <li class="liLookingMain">C</li>
+                            <li class="liLookingMain">C++</li>
+                            <li class="liLookingMain">C#</li>
+                            <li class="liLookingMain">HTML, CSS and JS</li>
+                        </div>
+                    </div>
+                    <div class="divLookingHalf">
+                        <div class="divOffers" id="divEngine">
+                            <h5>Engines</h5>
+                            <li class="liLookingMain">Unity</li>
+                            <li class="liLookingMain">Unreal</li>
+                        </div>
+                        <div class="divOffers" id="div">
+                            <h5>Softskills</h5>
+                            <li class="liLookingMain">teamwork</li>
+                            <li class="liLookingMain">empathy</li>
+                            <li class="liLookingMain">patience</li>
+                            <li class="liLookingMain">learning fast</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+            <!-- About -->
+            <section id="secAboutMe" class="section2">
+                <a href="about.html"><h3 class="headings" id="hrAboutHead">About Me</h3></a>
+                <hr class="shortLine" id="hrAboutMe">
+                <div id="divMiddleOfAbout">
+                    <div class="divAboutHalf" id="divPictureHalf">
+                        <div id="divMyPic">
+                            <img id="imgMyPic" src="images/me/passbild35x45.jpg" alt="profile Pic">
+                        </div>
+                    </div>
+                    <div  class="divAboutHalf">
+                        <div id="divAboutMeText">
+                            <p>  My name is Patricia Schultze, I am a Game Engineer, studying at the MD.H in Berlin. <br>
+                                 I love programming and I am currently in the 4th semester. <br>
+                                 I love cats and dogs and pretty much any other animal as well (including leeches). <br>
+                                 One unique skill I have is I would say, that the more stress there is, the calmer I become which my crazy horse teached me. <br>
+                                 Because the sentence "Only one of you gets to freak out at a time and it's never your turn" is very true. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        <!-- foot /--> 
+        <footer>
+            <!-- Contact -->
+            <h3 id="hContact" class="headings">Contact</h3>
+            <div id="divContactBoth">
+                <div class="divContact">
+                    <p class="pContactTitle">    &#128386;  Mail:</p>
+                    <a class="pContactText" id="mail" href="mailto:patricia.schultze@gmx,de" style="color: white; ">patricia.schultze@gmx.de</a>
+                </div>
+                <div class="divContact">
+                    <p class="pContactTitle">   Other:</p>
+                    <a  class="pContactText" id="linekdin" href="https://www.linkedin.com/in/patricia-schultze-3986aa2b8/?trk=opento_sprofile_topcard">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="patriciaSchultze.js"></script>
+
+    </body>
+</html>
+
+<!-- 
+<a class="imgSlide left" href=""><img src="images/MansionOfTimepic.png" alt="project: Mansion of Time - group" class="project-slide"></a>
+<a class="imgSlide middle" href=""><img src="images/HopsyFlopsie.png" alt="project: Hopsie Flopsie - group" class="project-slide"></a>
+<a  class="imgSlide middle" href=""><img src="images/fireWater.png" alt="project: Fireboy Watergirl - solo" class="project-slide"></a>  -->

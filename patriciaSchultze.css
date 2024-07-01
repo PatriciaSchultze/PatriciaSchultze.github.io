@@ -1,0 +1,659 @@
+/* general ****************************/  /*  */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-padding-top: 10vh;
+    scroll-behavior: smooth;
+}
+
+*{                                      /* to everything in the doc */
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style-type: none;              /*no bullet points next to lists*/
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 800;
+    color: rgb(144, 0, 0);
+    text-transform: uppercase;
+}
+
+h4, h5, h6, a{
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+section {
+    height: 89vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+img{
+    max-width: auto;
+    max-height: 50vh;
+}
+
+li, p, #logo, img, a, .button, h3, div, li { /* so that the transiotions of animation of for eg hover are smoother */
+    transition:all 300ms; -webkit-transition:all 300ms; -moz-transition:all 300ms; -o-transition:all 300ms;
+        /* it is written several times and also with sth before transitoin,  so that it works in all browsers */
+}
+
+li:hover, p:hover, #logo:hover, img:hover, a:hover, .button:hover, h3:hover, div:hover, li:hover { /* so that the transiotions of animation of for eg hover are smoother */
+    transition:all 250ms; -webkit-transition:all 300ms; -moz-transition:all 300ms; -o-transition:all 300ms;
+        /* it is written several times and also with sth before transitoin,  so that it works in all browsers */
+}
+
+br{
+    margin-bottom: 5px;
+}
+
+.section1{
+    background-color:  rgb(255, 248, 231);
+    background: linear-gradient(90deg, rgb(253, 241, 225) 0%, rgb(255, 248, 231) 100%);
+      
+}
+
+.section2{
+    background: linear-gradient(90deg, rgb(0, 180, 187) 0%, rgb(37, 223, 213) 100%);
+}
+.headings{
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+.shortLine{
+    margin: 10px;
+    margin-bottom: 19px;
+    width: 40vh;
+}
+
+/* Header ************************************************************************/
+#headerSpace{
+    top: 0;
+    width: 100vw;
+    height: 11vh;
+    background-color: antiquewhite;
+}
+
+#header{
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: antiquewhite;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid aqua;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 5px;
+    z-index: 10;
+}
+
+#ulHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    padding-top: 5px;
+}
+#ulHeader > li{
+    height: 100%;
+}
+
+.headerLinks {
+    font-size: 20px;
+    margin: 0 13px 0 13px;
+    color: black;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.headerLinks:hover{
+    text-decoration: underline;
+}
+
+.activeHeaderLink{
+    font-weight: 800;
+}
+
+#logo{
+    border-radius: 50%;
+    height: 80%;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.799);
+}
+#logo:hover{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.799);
+}
+
+/* welcome ************************************************************************/
+#secWelcome{
+    display: flex;
+}
+
+#LandscapeWarning{
+    display: none;
+}
+
+.divWelcome{
+    padding: 70px 60px 60px 60px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+#divWelcomeTextCenter{
+    align-items:  self-end;
+}
+
+#divWelcomeText{
+    display: flex;
+    flex-direction: column;
+    align-items:  self-end;
+}
+
+#divWelcomeText > h1{
+    font-size: 60px;
+}
+
+#divWelcomeText > h2{
+    font-size: 32px;
+    text-align: end;
+}
+
+#divWelcomeText > p{
+    font-size: 11px;
+} 
+
+#divHelloTextCenter{
+    align-items: flex-start; 
+}
+
+#divHelloText{
+    display: flex;
+    flex-direction: column;    
+    font-size: 20px;
+}
+
+#divHelloText > h4 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#divHelloText > h5 {
+    font-size: 10;
+    font-weight: 500;
+}
+
+
+#divJumpButton{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+#aJumpButton{
+    position: relative;
+    bottom: 30px;
+    color: rgba(0, 0, 0, 0.854);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 40px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.294);
+    border: 2px solid rgba(0, 0, 0, 0.683);
+    border-radius: 50%;
+    z-index: 8;
+}
+
+#aJumpButton:hover{
+    width: 43px;
+    font-size: 32px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.423);
+}
+
+
+/* projects ************************************************************************/
+
+#secProjects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 30px;
+}
+
+.olBullets{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    background-color: rgba(0, 0, 0, 0.366);
+    z-index: 3;
+    padding: 2px 8px;
+    border-radius: 12px;
+    user-select: none;
+}
+
+.liBullet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    font-size: 30px;
+    color: aliceblue;
+  }
+
+  .liBullet:hover{
+   font-size: 35px;
+   opacity: 0.9;
+  }
+
+  .active{
+    opacity: 1;
+  }
+
+
+#slideshow {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+    position: relative;
+    justify-content: center;
+    
+}
+
+
+  #slideshow.endRight{
+    justify-content: start;
+  }
+  #slideshow.endLeft{
+    justify-content: end;
+  }
+
+  .imgSlide {
+    width: 0%;
+    user-select: none;
+    opacity: 0;
+    transform-origin: center;
+    transform: scale(0.1);
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.294);
+    border: 2px solid rgba(0, 0, 0, 0.257);
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .imgSlide.middle {
+    transition: 250ms;
+    transform: none;
+    width: auto;
+    height: 97%;
+    opacity: 1;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+  .imgSlide.middle:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    height: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.274);
+    border-radius: 7px;
+    box-sizing: border-box;
+  }
+
+
+  .imgSlide.left {
+    transform: translateX(35%) scale(0.95);
+    opacity: 0.5;
+    cursor: pointer;
+    min-width: 30%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  .imgSlide.left:hover{
+    opacity: 0.7;
+  }
+
+  .imgSlide.right {
+    transform: translateX(-35%) scale(0.95);
+    opacity: 0.5;
+    cursor: pointer;
+    min-width: 30%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  .imgSlide.right:hover{
+    opacity: 0.7;
+  }
+
+  .translated-gallery-container {
+    transform: translateX(0px);
+    transition: transform 0.2s;
+    gap: 0;
+  }
+  
+  #projectsHead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #divArrows{
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+
+  .pfeil{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 40px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 2;
+    user-select: none;
+  }
+
+  .pfeil:hover{
+    opacity: 1;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.241);
+
+  }
+
+  #projectsSub{
+      width: 70vw;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      height: 42%;
+      
+  }
+
+  #hrBeneathProject{
+    margin-top: 19px;
+    
+  }
+
+  #aProjectTitle{
+    font-size: 23px;
+    margin-bottom: 14px;
+    margin-top: 0px;
+    color: rgb(144, 0, 0);
+    height: 27px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #aProjectTitle:hover{
+    text-decoration: underline;
+    font-size: 24px;
+  }
+
+  #divProjectsSubText{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  #pProjectsSubText{
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    align-items: start;
+    color: rgb(110, 20, 20);
+    width: 70%;
+}
+
+/* Look and Offers ***************************************************************/
+
+#secLookAndOffer{
+        justify-content: center;
+        gap: 10%;
+       
+}
+
+.divQuarterMain{
+   
+}
+
+#divQuarterLowerMain{
+   position: relative;
+   
+}
+
+#divQuarterMainLooking{
+    width: 50;
+}
+
+.hLookingMain{
+    font-size: 15px;
+    margin: 3px;
+    color: black;
+}
+
+#pInternshipMain{
+    font-size: 25px;
+    color: rgb(87, 10, 10);
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(147, 147, 147, 0.877);
+    display: inline-block;
+    font-family: 'Robo serif';
+}
+    
+#divLookingMain{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.liLookingMain{
+    list-style-type: circle;     
+    position: relative;
+    left: 30px;
+    font-size: 17px;
+}
+
+.divOffers{
+    margin: 15px 30px;
+    height: 50%;
+}
+
+/* About ************************************************************************/
+
+#secAboutMe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 30px;
+    height: 65vh;
+    box-sizing: border-box;
+}
+
+#hrAboutHead{
+    height: 30px;
+}
+
+#hrAboutHead:hover{
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+#hrAboutMe{
+    margin-bottom: 35px;
+}
+
+#divMiddleOfAbout{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    height:60%;
+    width: 100%;
+    
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.divAboutHalf{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+#divPictureHalf{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#divMyPic{
+    max-width: 45vw;
+    width: 50%;
+    height: 100%;
+     display: flex;
+    justify-content: end;
+    align-items: end;
+    box-sizing: border-box;
+}
+
+#imgMyPic{
+    
+    max-width: 45vw;
+    height: 100%;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.49);
+    border: 1px solid rgba(0, 0, 0, 0.776);
+    border-radius: 13px;
+
+}
+#divAboutMeText{
+    max-width: 45vw;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-shadow: rgba(255, 255, 255, 0.839) 0px 0px 7px;
+    
+}
+
+
+
+/* Contact Footer ************************************************************************/
+
+footer{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgb(37, 223, 213) 0%, rgb(5, 174, 180) 100%);    
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+    gap: 20px;
+}
+#hContact{
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+#divContactBoth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+.divContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.571);
+    border-radius: 13px;
+    padding: 10px;
+    width: 20%;
+}
+
+.pContactTitle{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+.pContactText{
+    font-size: 13px;
+    text-shadow: rgba(0, 0, 0, 0.839) 0px 0px 6px;
+}
+
+.pContactText:hover{
+    text-decoration: underline;
+}
+
+#linekdin{
+    color: white;
+}

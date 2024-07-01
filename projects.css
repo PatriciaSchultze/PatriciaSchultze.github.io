@@ -1,0 +1,378 @@
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+#divProjects{
+    position: relative;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    background: linear-gradient(90deg, rgb(237, 230, 211) 0%, rgb(255, 248, 231) 100%);
+}
+
+
+/* Sider ******************************************************/
+
+#divSiderNav{
+    position: fixed;
+    height: 90vh;
+    width: 15vw;
+    bottom: 0;
+    z-index: 9;
+    background: linear-gradient(90deg, rgb(254, 247, 227) 0%, rgb(255, 248, 231) 100%);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ulSider{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.divSider{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+.pSider{
+    font-size: 12px;
+    margin: 3px;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+.divSiderLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.aSiderLinks{
+    color: rgb(127, 26, 26);
+    margin: 2px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.aSiderLinks:hover{
+    text-decoration: underline;
+}
+
+/* Projects ******************************************************/
+
+.secProjects{
+    background: linear-gradient(90deg, rgb(255, 248, 231) 0%, rgb(237, 230, 211) 100%);
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    gap: 10px;
+    height: 140vh;
+}
+
+.divDrittel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    gap: 10px;
+
+}
+
+#divOverview{
+    padding-right: 0;
+}
+
+/* slideshows ******************************************************************************************************************/
+
+
+.divSlideshowProject{
+    position: relative;
+    height: 80%;
+    width: 37%;
+    background: linear-gradient(90deg, rgba(37, 223, 214, 0.637) 0%, rgba(7, 201, 208, 0.821) 100%);    
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.589);
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.613);
+
+}
+
+.divSlideshowProjectSecond{
+    background: linear-gradient(90deg, rgba(6, 193, 199, 0.712) 0%, rgba(37, 223, 214, 0.597) 100%);   
+}
+/* bullets ***********************************************/
+
+.divBulletContainer{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#olBulletsProject{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 13px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.227);
+    border-radius: 12px;
+    user-select: none;
+
+    z-index: 3;
+    padding: 2px 5px;
+}
+
+.bulletProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+   
+    border-radius: 50%;
+    box-sizing: border-box;
+   
+}
+
+.activeBullet {
+    opacity: 1;
+}
+
+.bulletProject:hover{
+   font-size: 35px;
+   opacity: 0.9;
+  }
+
+
+  /* slides ***********************************************/
+
+.divSlides{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    justify-content: center;
+}
+
+
+  .imgSlideProjects {
+    width: 0%;
+    user-select: none;
+    opacity: 0;
+    transform-origin: center;
+    transform: scale(0.1);
+    z-index: 2;
+    border-radius: 4px;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .activeSlide {
+    transition: 250ms;
+    transform: none;
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+
+/* arrows ***********************************************/
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 40px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.676);
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 3;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.636);
+    
+}
+#divArrowsProjects{
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    
+    
+  }
+
+
+
+.arrow:hover {
+    opacity: 1;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.241);
+    background-color: rgba(0, 0, 0, 0.521);
+    
+}
+
+.arrow.links {
+    left: 0;
+}
+
+.arrow.rechts {
+    right: 0;
+}
+
+
+/* text ******************************************************************************************************************/
+
+
+.divDrittelText{
+    display: flex;
+    width: 66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}       
+
+.divDrittelTitel{
+    border-bottom: 1px solid rgb(85, 85, 85);
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.divDrittelTitel1{
+    font-weight: 600;
+}
+
+.divDrittelTitel23{
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: black;
+}
+
+.divDrittelInhalt{
+    flex-grow: 1;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+
+.divContentHalf{
+    width: 44%;
+    height: 100%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.pContentHalf{
+    font-size: 14px;
+}
+
+
+.divContentQuarters{
+    width: 22%;
+    height: 100%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.liOverview
+{
+    text-wrap: nowrap;
+    font-size: 16px;
+}
+
+#liLinks{
+    display: flex;
+    gap: 8px;
+}
+
+.aLinkProject{
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+.divQuarterMiddle{
+    height: 85%;
+    align-self: center;
+    width: 2px;
+    box-shadow: 8px 0px 3px rgba(0, 0, 0, 0.461);
+    /* border-right: 1px solid rgb(85, 85, 85); */
+    margin-left: 4px;
+    margin-right: 28px;
+}
+
+.pDrittelText{
+    padding: 0px 40px;
+    height: 100%;
+    font-size: 14px;
+}
+
+#pProcessTextMansion{
+    
+}
+
+#divFooter{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+    width: 100vw;
+}
+
+#foContact{
+    width: 87vw;
+    
+}
+

@@ -1,0 +1,113 @@
+@media only screen and (max-height: 590px) {
+
+    .secProjects{
+        height: 450vh;
+    }
+
+    #divOverview{
+        flex-direction: column-reverse;
+    }
+
+    .divSlideshowProject{
+        height: 50vh;
+        width: 70%;
+    }
+    
+    #ulSider{
+        gap:20px
+    }
+
+    .divSider{
+        margin: 0;
+        padding: 0;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.461);
+        border-radius: 3px;
+    }
+
+    .pSider{
+        display: none;
+    }
+
+    .divSiderLinks{
+        gap: 5px;
+    }
+
+    .aSiderLinks{
+        margin: 0;
+        font-size:  11px;
+    }
+
+    .divDrittelText{
+        width: 90%;
+        height:50%;
+    }
+    .divDrittel{
+        flex-direction: column;
+    }
+    .divReverseDrittel{
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+        
+    .columnLayoutWidth{
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .secProjects{
+        height: 450vh;
+    }
+
+
+    #divOverview{
+        flex-direction: column-reverse;
+    }
+
+    .divSlideshowProject{
+        height: 50vh;
+        width: 70%;
+    }
+
+    #ulSider{
+        gap:20px
+    }
+
+    .divSider{
+        margin: 0;
+        padding: 0;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.461);
+        border-radius: 3px;
+    }
+
+    .pSider{
+        display: none;
+    }
+
+    .divSiderLinks{
+        gap: 5px;
+    }
+
+    .aSiderLinks{
+        margin: 0;
+        font-size:  11px;
+    }
+    .divDrittelText{
+        width: 90%;
+        height:50%;
+    }
+    .divDrittel{
+        flex-direction: column;
+    }
+    .divReverseDrittel{
+        flex-direction: column-reverse;
+    }
+
+        
+}

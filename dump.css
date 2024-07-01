@@ -1,0 +1,427 @@
+/* general */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    background-color:  rgb(146, 247, 230);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none; /*no bullet points next to lists*/
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 1000;
+    color: rgb(144, 0, 0);
+    text-transform: uppercase;
+}
+
+ h4, h5, h6, a, p{
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 500;
+}
+
+section {
+    height: 100hv;
+    width: 100wh;
+    background-color:  rgb(255, 248, 231);
+}
+
+
+li, p, #logo, img, a, .button { /* so that the transiotions of animation of for eg hover are smoother */
+    transition:all 300ms; 
+}
+
+/* preHeader *********************************************/
+#header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerSpace{
+    width: 100%;
+    height: 70;
+    background-color: rgb(255, 248, 231);
+}
+
+.longRed{
+    margin: 0;
+    background-color: rgb(144, 0, 0);
+    width: 100%;
+    height: 1px;
+    z-index: 2;
+    box-shadow: 0 5px 5px;
+}
+
+
+/* header *********************************************/
+#logo{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: -10px -5px 0 -5px;  /* top, right, down, left, */   
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+#logo:hover{
+    opacity: 0.5;
+}
+
+
+
+#logo img{  /* adressing the image(s) within the div container logo */
+    width: 100%;        /* same width as parent (-> in this case as the div container logo) */
+}
+
+/* styles */
+
+header nav{
+    margin: 10px 10px 0 0;
+    align-items: center;
+}
+
+header nav ul li{ 
+    float: left;
+    margin-right: 24px;
+}
+
+header nav ul li:hover{ 
+    font-size: 14px;
+}
+
+header nav ul li a {
+    font-size: 11px;
+    position: relative;
+    top:4px;
+    color: rgb(144, 0, 0);
+    font-weight: bold;
+}
+
+#header{
+    z-index: 1;
+
+}
+
+header{
+    width: 100%;
+    height: 78px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgb(255, 248, 231);
+    background-position: center center;
+    z-index: 1; /*header immer an vorderer stelle, natürlich nur, wenn andere elemente keinen höheren z-index haben */
+    overflow: auto;
+}
+
+
+.headerLinks{
+    z-index: 1;
+}
+
+.menu{
+    width: 0px;
+    display: none;
+}
+
+.activeMenu{
+     width: 25px;
+    display: block; 
+    /* font-size: 5px; */
+    margin: auto;
+}
+
+/* slideshow *********************************************/
+
+.slideshow {
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    box-shadow: 0px 0px 10px gray;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;    /* mache alle slides am anfang unsichtbar */
+    transition: opacity 2s;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-bild {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    
+}
+
+.slide-textbereich {
+    position: absolute;
+    border: 1px solid rgb(144, 0, 0);
+    border-radius: 3%;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: rgb(144, 0, 0);
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+    padding: 2% 5% 1% 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-text {
+    margin-top: 20px;
+    font-size: 1.29em;
+    margin: 10px 0;
+}
+
+.slide-subtext {
+    font-size: 0.9em;
+    margin: 0 0 12px 0 !important;
+
+}
+
+.thinRed{
+    width: 90%;
+    height: 1px;
+    border: 0px solid white;
+    background-color: rgb(144, 0, 0);
+    margin-bottom: 11px;
+}
+
+.pfeil {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    color: rgba(255, 255, 255, 0.5);
+    user-select: none;
+    cursor: pointer;
+    
+}
+
+.pfeil:hover {
+    color: white;
+    
+}
+
+.pfeil-links {
+    left: 0;
+}
+
+.pfeil-rechts {
+    right: 0;
+}
+
+.indikatorenliste {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.indikator {
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 2s;
+}
+
+.aktiv {
+    opacity: 1;
+}
+
+
+/* Wilkommen *********************************************/
+.divisions{
+    width: 10%;
+    color: rgb(144, 0, 0);
+
+}
+
+#welcome{
+    padding-top: 50px;
+    justify-content: center;
+}
+
+#welcome div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#welcome div p{
+    margin: 0;
+    font-size: 12px;
+    width: 70%;
+    font-weight: 400;
+}
+
+    /* picLinks */
+
+
+
+    #otherPages{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    #otherPages ul {
+        padding: 0;
+    }
+
+    #otherPages ul li{
+        width: 33,3%;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 2px solid rgb(144, 0, 0);
+        background-color: rgb(144, 0, 0);
+        border-radius: 3%;
+    }
+
+    #otherPages ul li:hover{
+        background-color: rgba(144, 0, 0, 0.5);
+    }
+
+    #otherPages ul li img{
+        border-radius: 3%;
+    }
+
+    #otherPages ul li h5{
+        margin: 3px;
+        
+        color: white;
+    }
+
+
+    img {
+        width: 200px;
+    }
+/* footer */
+
+footer {
+    background-color:  rgb(144, 0, 0);
+    margin: 0;
+}
+
+#impressum{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 30px 10px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.infoTitle{
+    height: 30px;
+    margin-bottom: 0;
+}
+
+.infoText{
+    margin:5px;
+    font-size: 11px;
+}
+
+footer iframe{
+    width: 100%;
+    height:50vh;
+}
+
+#mail:hover{
+    text-decoration: underline;
+}
+
+/* other pages **************************************/
+
+.subPagesMiddle{
+    height:50vh;
+    background: rgb(255, 248, 231); 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+        /* kontakt */
+        form input, form textarea{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            margin-bottom: 10px;
+            border-radius: 2px;
+            border: 2px solid black;
+        }
+
+        form input{
+            width: 552px;
+            height: 30px;
+
+        }
+
+        form textarea{
+            width: 552px;
+            height: 200px;
+            resize: none;
+        }
+
+        .input_text{
+            color: #494949;
+            padding-left: 10px;
+        }
+
+        form input:first-child{
+            margin-top: 20px;
+        }
+
+        .button{
+            background-color: #f0f0f0;
+            color: #494949;
+            width: 566px;
+            height: 50px;
+        }
+        .button:hover{
+            background-color: #494949;
+            color: #f0f0f0;
+        }
