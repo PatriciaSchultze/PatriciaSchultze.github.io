@@ -1,4 +1,6 @@
 // //slideshow ///////////////////////////////////////////////////////////////////
+const textLink = document.getElementById("aProjectTitle");
+textLink.addEventListener("click", toProjectSite);
 
 //arrays der klassen
 const bullets = document.getElementsByClassName("liBullet");
@@ -59,42 +61,52 @@ function springeZuEintrag(neuerIndex) {
 
     switch (neuerIndex){
       case 0: 
+        textLink.dataset.url="projects.html#secMansion";
         ProjectTitle.textContent = "Mansion of Time";
         ProjectText.innerHTML = "This is my second game of a big group project, we were 6 people working over 6 months on it. <br>In this you are trapped in a time loop in the 1920s on Halloween. You have to solve several puzzles and explore an old mansion to be able to get back into your time.";
         break;
         case 1: 
-        ProjectTitle.textContent = "Hopsie Flopsie";
+        textLink.dataset.url="projects.html#secHopsie";
+        ProjectTitle.textContent = "Hopsy Flopsiy";
         ProjectText.innerHTML = "This was my first game in a big group project. It is a mobile game, where you are a fish, wanting to reach the ocean, having to cross an entire city. One reference game was 'Crossy Roads'. <br>It is made in Unity and I was mainly responsible for the UI and saving system.";
         break;
         case 2: 
+        textLink.dataset.url="projects.html#secDuoDash";
         ProjectTitle.textContent = "Duo Dash";
         ProjectText.innerHTML = "This is a group project of 8 people. <br>We are still working on it and expect it to be finished in September 2024. <br>So, right now what I can already show is some work in progress.";
         break;
         case 3: 
+        textLink.dataset.url="projects.html#secPension";
         ProjectTitle.textContent = "Pension Schultze Website";
         ProjectText.innerHTML = "This is my very first website and with that also the first time I worked with HTML, CSS and JS. <br>I did it as a start for my mom's website. She has a bed and breakfast and someday I want to program the whole website for her.";
         break;
         case 4: 
+        textLink.dataset.url="projects.html#secPortfolio";
         ProjectTitle.textContent = "My Portfolio Website";
         ProjectText.innerHTML = "This is this very webiste, which I programmed to apply for the internship in Ocotber 2024. I choose to build this website so I can show my work in an ordered way. <br>I never expecpted it to take THIS much work. I am very glad and proud to finally be able to present it to you now.";
         break;
         case 5: 
+        textLink.dataset.url="projects.html#secCutter";
         ProjectTitle.textContent = "Carrot Cutter Roboter";
         ProjectText.innerHTML = "In a group of 4 we built an roboter which is able to cut fruits and vegetables into pieces with the same volume. <br>For this we used the programs Arduino, to control the motors, and Processing, to read and work with the input of the camera, giving the calcutlated results then over to the arduino program. ";
         break;
         case 6: 
+        textLink.dataset.url="projects.html#secTunnels";
         ProjectTitle.textContent = "The Tunnels";
         ProjectText.innerHTML = "This was a project which I did for two different classes in my year abroad in Canada. One was Creative Writing and the other one Animation. <br>In Animation I did for this a storyboard and began to model the tunnels (my first models ever), in Creative Writing I wrote the whole story as an urban exploration story.";
         break;
         case 7: 
-        ProjectTitle.textContent = "Short Stories and Concepts";
-        ProjectText.innerHTML = "Those I wrote when I was in Canada, mostly for my creative witing class and for narrative design. <br>They are each very different, of different topics, themes and length. ";
-        break;
-        case 8: 
+        // textLink.dataset.url="projects.html#secStories";
+        // ProjectTitle.textContent = "Short Stories and Concepts";
+        // ProjectText.innerHTML = "Those I wrote when I was in Canada, mostly for my creative witing class and for narrative design. <br>They are each very different, of different topics, themes and length. ";
+        // break;
+        case 7: 
+        textLink.dataset.url="projects.html#secFireWater";
         ProjectTitle.textContent = "Fire and Water";
         ProjectText.innerHTML = "For my programming exam last semester (winter semester 2023) I programmed this within one and a half days. <br>It is a 2D jum n run and I was amazed how fast this went to create this level, after working for so long on the 'Mansion of Time project'.";
         break;
-        case 9: 
+        case 8: 
+        textLink.dataset.url="projects.html#secFirstUnreal";
         ProjectTitle.textContent = "First Unreal Game";
         ProjectText.innerHTML = "This was my very fist game built in an engine. <br>In it you have to collect 5 coins to win. For each coin you have to overcome a little puzzle.";
         break;
