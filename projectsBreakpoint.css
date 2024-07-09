@@ -1,9 +1,12 @@
 @media only screen and (max-height: 590px) {
 
     .secProjects{
-        height: 450vh;
+        height: auto;
     }
 
+    #secMansion{
+        height: auto;
+    }
     #divOverview{
         flex-direction: column-reverse;
     }
@@ -40,12 +43,30 @@
     .divDrittelText{
         width: 90%;
         height:50%;
+        margin: 0px 0 25px 0;
     }
     .divDrittel{
         flex-direction: column;
+        box-sizing: border-box;
+       
     }
     .divReverseDrittel{
         flex-direction: column-reverse;
+    }
+
+    .divDrittelTitel{
+        margin-bottom: 25px;
+    }
+
+
+
+    .divDrittelInhalt{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divDrittelTitel23{
+        margin-top: 25px;
     }
 
 
@@ -57,12 +78,15 @@
         flex-direction: column;
         align-self: center;
         width: 100%;
-        padding: 15px;
+        padding: 30px 15px;
         box-sizing: border-box;
     }
 
     .secProjects{
-        height: 450vh;
+        height: auto;
+    }
+    #secMansion{
+        height: auto;
     }
 
 
@@ -101,13 +125,30 @@
     .divDrittelText{
         width: 90%;
         height:50%;
+        margin: 0px 0 25px 0;
     }
     .divDrittel{
         flex-direction: column;
+        box-sizing: border-box;
+       
     }
     .divReverseDrittel{
         flex-direction: column-reverse;
     }
 
+    .divDrittelTitel{
+        margin-bottom: 25px;
+    }
+
+
+
+    .divDrittelInhalt{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divDrittelTitel23{
+        margin-top: 25px;
+    }
         
 }

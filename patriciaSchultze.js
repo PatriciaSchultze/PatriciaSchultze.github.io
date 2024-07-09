@@ -5,6 +5,8 @@ textLink.addEventListener("click", toProjectSite);
 //arrays der klassen
 const bullets = document.getElementsByClassName("liBullet");
 const slides = document.getElementsByClassName("imgSlide");
+const arrowLeft = document.getElementsByClassName("pfeil-links");
+const arrowRight = document.getElementsByClassName("pfeil-rechts");
 
 const slideshow = document.getElementById("slideshow");
 const ProjectTitle = document.getElementById("aProjectTitle");
@@ -44,18 +46,18 @@ function springeZuEintrag(neuerIndex) {
     slides[aktuellerIndex].classList.remove("middle");
     slides[aktuellerIndex].removeEventListener("click", toProjectSite);
     if(aktuellerIndex-1>-1){ slides[aktuellerIndex-1].classList.remove("left"); slides[aktuellerIndex-1].removeEventListener("click", HelperLeft); }
-    else slideshow.classList.remove("endLeft"); 
+    else {slideshow.classList.remove("endLeft"); arrowLeft[0].classList.remove("pfeilEnd");arrowLeft[0].classList.add("pfeil"); }
     if(aktuellerIndex+1<slides.length) {slides[aktuellerIndex+1].classList.remove("right"); slides[aktuellerIndex+1].removeEventListener("click", HelperRight);}
-    else slideshow.classList.remove("endRight"); 
+    else {slideshow.classList.remove("endRight"); arrowRight[0].classList.remove("pfeilEnd");arrowRight[0].classList.add("pfeil");}
 
 
     bullets[neuerIndex].classList.add("active");
     slides[neuerIndex].classList.add("middle");
     slides[neuerIndex].addEventListener("click", toProjectSite);
     if(neuerIndex-1>-1) {slides[neuerIndex-1].classList.add("left"); slides[neuerIndex-1].addEventListener("click", HelperLeft);}
-    else slideshow.classList.add("endLeft"); 
+    else {slideshow.classList.add("endLeft"); arrowLeft[0].classList.add("pfeilEnd"); arrowLeft[0].classList.remove("pfeil"); }
     if(neuerIndex+1<slides.length) {slides[neuerIndex+1].classList.add("right"); slides[neuerIndex+1].addEventListener("click", HelperRight);}
-    else slideshow.classList.add("endRight"); 
+    else {slideshow.classList.add("endRight"); arrowRight[0].classList.add("pfeilEnd");arrowRight[0].classList.remove("pfeil");}
 
     aktuellerIndex = neuerIndex;
 

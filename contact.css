@@ -46,6 +46,7 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.103);
 }
 
+
 #divContactBothMiddle{
     display: flex;
     align-items: center;
@@ -72,6 +73,10 @@
     font-size: 27px;
     margin-bottom: 5px;
     height: 35px;
+}
+
+#imgMail{
+    height: 22px;
 }
 
 .pContactTextMiddle:hover{

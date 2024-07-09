@@ -429,6 +429,13 @@ br{
 
   }
 
+  .pfeilEnd{
+    opacity: 0;
+  }
+  .pfeilEndrechts{
+    display: none;
+  }
+
   #projectsSub{
       width: 70vw;
       display: flex;

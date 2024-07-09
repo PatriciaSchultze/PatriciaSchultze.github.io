@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1100px) {
+ #secAboutMe{
+    height: auto;
+ }
+
+
+        
+}
+
 @media only screen and (max-width: 924px) {
     .olBullets{
        gap: 5px;
@@ -40,9 +49,6 @@
         width: 47vw;
     }
 
-    #secAboutMe{
-        height: 80vh;
-    }
     
 }
 
@@ -193,8 +199,11 @@
         gap: 1%;
         padding-right: 10px;
         padding-left: 30px;
+        padding-bottom: 50px;
+        padding-top: 25px;
         box-sizing: border-box;
         gap: 5%;
+        height: auto;
     }
 
     #divQuarterLowerMain{
@@ -204,10 +213,6 @@
 
 /* About ******************************************************/
 
-    #secAboutMe{
-        height: 132vh;
-        padding-bottom: 0;
-    }
 
     #hrAboutHead:hover{
        
