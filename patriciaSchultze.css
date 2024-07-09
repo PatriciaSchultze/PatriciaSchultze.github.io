@@ -474,7 +474,8 @@ br{
   #pProjectsSubText{
     font-size: 16px;
     display: flex;
-    text-align: center;
+    hyphens: auto; 
+	text-align: justify;
     align-items: start;
     color: rgb(110, 20, 20);
     width: 70%;

@@ -71,6 +71,10 @@ iframe{
     font-weight: 600;
 }
 
+.currentSiderLink{
+    text-decoration: underline;
+}
+
 .aSiderLinks:hover{
     text-decoration: underline;
 }

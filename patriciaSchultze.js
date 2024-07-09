@@ -75,7 +75,7 @@ function springeZuEintrag(neuerIndex) {
         case 2: 
         textLink.dataset.url="projects.html#secDuoDash";
         ProjectTitle.textContent = "Duo Dash";
-        ProjectText.innerHTML = "This is a group project of 8 people. <br>We are still working on it and expect it to be finished in September 2024. <br>So, right now what I can already show is some work in progress.";
+        ProjectText.innerHTML = "This is a group project of 8 people. We are still working on it and expect it to be finished in September 2024. <br>So, right now what I can already show is some work in progress.";
         break;
         case 3: 
         textLink.dataset.url="projects.html#secPension";
