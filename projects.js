@@ -1,24 +1,24 @@
-//waypoints
+// //waypoints
 
-//siderTitles
+// //siderTitles
 
- const aSiderLinks = document.getElementsByClassName("aSiderLinks");
+//  const aSiderLinks = document.getElementsByClassName("aSiderLinks");
 
  
 
-const secMansion = new Waypoint({
-    element: document.getElementById('secMansion'),
-    handler: function(direction) {
-      aSiderLinks[0].classList.add("currentSiderLink");
-    }
-  })
+// const secMansion = new Waypoint({
+//     element: document.getElementById('secMansion'),
+//     handler: function(direction) {
+//       aSiderLinks[0].classList.add("currentSiderLink");
+//     }
+//   })
 
-  const secHopsy = new Waypoint({
-    element: document.getElementById('secHopsie'),
-    handler: function(direction) {
-      aSiderLinks[1].classList.add("currentSiderLink");
-    }
-  })
+//   const secHopsy = new Waypoint({
+//     element: document.getElementById('secHopsie'),
+//     handler: function(direction) {
+//       aSiderLinks[1].classList.add("currentSiderLink");
+//     }
+//   })
 
 
 
