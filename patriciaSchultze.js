@@ -80,7 +80,7 @@ function springeZuEintrag(neuerIndex) {
         case 3: 
         textLink.dataset.url="projects.html#secPension";
         ProjectTitle.textContent = "Pension Schultze Website";
-        ProjectText.innerHTML = "This is my very first website and with that also the first time I worked with HTML, CSS and JS. <br>I did it as a start for my mom's website. She has a bed and breakfast and someday I want to program the whole website for her.";
+        ProjectText.innerHTML = "This is my very first website and with that also the first time I worked with HTML, CSS and JS. <br>I did it as a start for my mom's website. She has a Bed n' Breakfast and someday I want to program the whole website for her.";
         break;
         case 4: 
         textLink.dataset.url="projects.html#secPortfolio";
@@ -89,8 +89,8 @@ function springeZuEintrag(neuerIndex) {
         break;
         case 5: 
         textLink.dataset.url="projects.html#secCutter";
-        ProjectTitle.textContent = "Carrot Cutter Roboter";
-        ProjectText.innerHTML = "In a group of 4 we built an roboter which is able to cut fruits and vegetables into pieces with the same volume. <br>For this we used the programs Arduino, to control the motors, and Processing, to read and work with the input of the camera, giving the calcutlated results then over to the arduino program. ";
+        ProjectTitle.textContent = "Carrot Cutter Robot";
+        ProjectText.innerHTML = "In a group of 4 we built an robot which is able to cut fruits and vegetables into pieces with the same volume. <br>For this we used the programs Arduino, to control the motors, and Processing, to read and work with the input of the camera, giving the calcutlated results then over to the Arduino program. ";
         break;
         case 6: 
         textLink.dataset.url="projects.html#secTunnels";
